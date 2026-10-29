@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content"
+    />
+    <meta name="theme-color" content="#f5f5f5" />
+    <meta name="description" content="İş, ev ve eksikler için kişisel yapılacaklar listesi" />
+    <link rel="icon" href="/yapilacaklar/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/yapilacaklar/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/yapilacaklar/apple-touch-icon-180x180.png" />
+    <title>Yapılacaklar</title>
+    <script>
+      // Kayıtlı temayı ilk boyamadan önce uygula
+      try {
+        var theme = localStorage.getItem('yapilacaklar-theme')
+        var dark = theme === 'dark' || (theme !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches)
+        if (dark) document.documentElement.classList.add('dark')
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="/yapilacaklar/assets/index-BSEbMlRJ.js"></script>
+    <link rel="stylesheet" crossorigin href="/yapilacaklar/assets/index-W7LD1JOJ.css">
+  <link rel="manifest" href="/yapilacaklar/manifest.webmanifest"></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
